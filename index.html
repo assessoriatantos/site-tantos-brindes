@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tantos Brindes — Brindes Personalizados para Empresas</title>
+  <meta name="description" text-align: center content="Brindes personalizados com sua marca. Camisetas, canecas, sacolas, bonés e muito mais. Pedido mínimo a partir de 30 unidades. Entrega para todo o Brasil." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ======================== TOPBAR ======================== -->
+<div class="topbar">
+  🎁 Pedido mínimo a partir de 30 unidades &nbsp;|&nbsp; Entrega para todo o Brasil &nbsp;|&nbsp;
+  <a href="#orcamento">Solicite seu orçamento agora →</a>
+</div>
+
+<!-- ======================== HEADER ======================== -->
+<header class="header" id="inicio">
+  <div class="container">
+    <div class="header__inner">
+      <a href="#inicio" class="header__logo">
+        <img src="logo preta.png" alt="Tantos Brindes" class="header__logo-img" />
+      </a>
+      <nav class="nav">
+        <a href="#inicio">Início</a>
+        <a href="#quem-somos">Quem Somos</a>
+        <a href="#duvidas">Dúvidas</a>
+        <a href="#sac">SAC</a>
+        <a href="#orcamento" class="btn btn--dark">Orçamento</a>
+      </nav>
+      <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ======================== MOBILE MENU ======================== -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" onclick="toggleMenu()">
+    <svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12" stroke="white" stroke-width="2.5" stroke-linecap="round"/></svg>
+  </button>
+  <a href="#inicio" onclick="toggleMenu()">Início</a>
+  <a href="#quem-somos" onclick="toggleMenu()">Quem Somos</a>
+  <a href="#duvidas" onclick="toggleMenu()">Dúvidas</a>
+  <a href="#sac" onclick="toggleMenu()">SAC</a>
+  <a href="#orcamento" class="btn btn--primary" onclick="toggleMenu()">Solicitar Orçamento</a>
+</div>
+
+<!-- ======================== HERO ======================== -->
+<section class="hero">
+  <div class="container">
+    <div class="hero__inner">
+      <div class="hero__content">
+        <div class="hero__badge">Mais de 10.000 clientes atendidos</div>
+        <h1 class="hero__title">
+          Brindes personalizados que<br /><em>fixam sua marca</em> na mente do cliente
+        </h1>
+        <p class="hero__sub">
+          Camisetas, canecas, sacolas, bonés e +10 categorias de brindes com sua identidade. Produção rápida, qualidade garantida, entrega em todo o Brasil.
+        </p>
+        <div class="hero__ctas">
+          <a href="#orcamento" class="btn btn--primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            Solicitar Orçamento Grátis
+          </a>
+        </div>
+        <div class="hero__stats">
+          <div>
+            <div class="hero__stat-num">+3M</div>
+            <div class="hero__stat-label">brindes produzidos</div>
+          </div>
+          <div>
+            <div class="hero__stat-num">+10K</div>
+            <div class="hero__stat-label">empresas atendidas</div>
+          </div>
+          <div>
+            <div class="hero__stat-num">5 Minutos</div>
+            <div class="hero__stat-label">resposta de orçamento</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== QUOTE SECTION ======================== -->
+<section class="ms-section section--gray" id="orcamento">
+  <div class="container">
+    <div class="ms-wrapper">
+      <div class="ms-header">
+        <h2 class="ms-title">Preencha abaixo e solicite seu<br />ORÇAMENTO GRATUITO</h2>
+        <p class="ms-subtitle">Um <span class="ms-gradient-text">consultor</span> entrará em contato com você via WhatsApp imediatamente após recebermos as informações do formulário abaixo</p>
+      </div>
+      <div class="ms-card">
+
+        <div class="ms-step active" id="ms-step-1">
+          <label class="ms-label">Nome</label>
+          <input type="text" class="ms-input" id="ms-nome" placeholder="Seu nome completo" />
+        </div>
+
+        <div class="ms-step" id="ms-step-2">
+          <label class="ms-label">WhatsApp</label>
+          <input type="tel" class="ms-input" id="ms-whatsapp" placeholder="(11) 99999-9999" />
+        </div>
+
+        <div class="ms-step" id="ms-step-3">
+          <label class="ms-label">E-mail</label>
+          <input type="email" class="ms-input" id="ms-email" placeholder="email@empresa.com" />
+        </div>
+
+        <div class="ms-step" id="ms-step-4">
+          <label class="ms-label">Produto de interesse <span class="ms-counter">(Etapa 4 de 6)</span></label>
+          <select class="ms-select" id="ms-produto">
+            <option value="">Selecione o produto...</option>
+            <option>Bonés Personalizados</option>
+            <option>Camisetas Personalizadas</option>
+            <option>Sacochilas Personalizadas</option>
+            <option>Canecas Personalizadas</option>
+            <option>Kits Corporativos</option>
+            <option>Cadernos e Blocos</option>
+            <option>Squeeze e Garrafinhas</option>
+            <option>Canetas Personalizadas</option>
+            <option>Outro produto</option>
+          </select>
+        </div>
+
+        <div class="ms-step" id="ms-step-5">
+          <label class="ms-label">Quantidade estimada <span class="ms-counter">(Etapa 5 de 6)</span></label>
+          <select class="ms-select" id="ms-quantidade">
+            <option value="">Selecione a quantidade...</option>
+            <option>30 a 50 unidades</option>
+            <option>50 a 100 unidades</option>
+            <option>100 a 500 unidades</option>
+            <option>Mais de 500 unidades</option>
+            <option>Menos de 30 unidades</option>
+          </select>
+        </div>
+
+        <div class="ms-step" id="ms-step-6">
+          <label class="ms-label">Segmento da sua empresa <span class="ms-counter">(Etapa 6 de 6)</span></label>
+          <select class="ms-select" id="ms-segmento">
+            <option value="">Selecione o segmento...</option>
+            <option>Agência de Publicidade </option>
+            <option>Agência de Eventos</option>
+            <option>Agronegócio</option>
+            <option>Automotivo</option>
+            <option>Esportivo</option>
+            <option>Indústria</option>
+            <option>Mercado Financeiro</option>
+            <option>Mercado Imobiliário</option>
+            <option>Outro segmento</option>
+          </select>
+        </div>
+
+        <div class="ms-nav-btns">
+          <button class="ms-btn-next" id="ms-btn-next" onclick="msNext()">Próximo</button>
+          <button class="ms-btn-submit" id="ms-btn-submit" style="display:none" onclick="msSubmit(event)">Solicitar Orçamento</button>
+          <button class="ms-btn-back" id="ms-btn-back" onclick="msBack()" disabled>Voltar</button>
+        </div>
+
+        <p class="ms-privacy">Ao enviar este formulário, você concorda com as nossas <a href="#">Políticas de Privacidade</a>.</p>
+
+        <div class="ms-success" id="ms-success">
+          <div class="ms-success__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <p class="ms-success__msg">Solicitação enviada.<br>Em 5 minutos entraremos em contato com você!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== HOW IT WORKS ======================== -->
+<section class="section">
+  <div class="container">
+    <div style="text-align:center">
+      <span class="tag">Como funciona</span>
+      <h2 class="title">Do pedido à entrega<br />em 4 passos simples</h2>
+    </div>
+    <div class="hiw__steps">
+      <div class="hiw__step">
+        <div class="hiw__num">1</div>
+        <div class="hiw__step-title">Solicite o orçamento</div>
+        <div class="hiw__step-desc">Preencha o formulário com o produto, quantidade e sua ideia. É grátis e sem compromisso.</div>
+      </div>
+      <div class="hiw__step">
+        <div class="hiw__num">2</div>
+        <div class="hiw__step-title">Receba a proposta</div>
+        <div class="hiw__step-desc">Nossa equipe envia orçamento em até 48h com preço, prazo e arte de visualização.</div>
+      </div>
+      <div class="hiw__step">
+        <div class="hiw__num">3</div>
+        <div class="hiw__step-title">Aprova e produzimos</div>
+        <div class="hiw__step-desc">Após aprovação da arte e pagamento, iniciamos a produção com acompanhamento em tempo real.</div>
+      </div>
+      <div class="hiw__step">
+        <div class="hiw__num">4</div>
+        <div class="hiw__step-title">Receba na sua porta</div>
+        <div class="hiw__step-desc">Entrega em todo o Brasil com código de rastreio. Prazo de 7 dias úteis após aprovação.</div>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:48px">
+      <a href="#orcamento" class="btn btn--dark">Começar agora →</a>
+    </div>
+    <div class="trustbar trustbar--inline">
+      <div class="trustbar__inner">
+        <div class="trustbar__item">
+          <div class="trustbar__icon">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          Entrega para todo o Brasil
+        </div>
+        <div class="trustbar__item">
+          <div class="trustbar__icon">
+            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          Qualidade garantida
+        </div>
+        <div class="trustbar__item">
+          <div class="trustbar__icon">
+            <svg viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+          </div>
+          Pix e Cartão
+        </div>
+        <div class="trustbar__item">
+          <div class="trustbar__icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          Prazo de 7 dias úteis
+        </div>
+        <div class="trustbar__item">
+          <div class="trustbar__icon">
+            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          A partir de 30 unidades
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== VALUE PROPS ======================== -->
+<section class="section section--gray">
+  <div class="container">
+    <div style="text-align:center">
+      <span class="tag">Por que brindes?</span>
+      <h2 class="title">A estratégia de marketing mais rentável<br />que existe</h2>
+    </div>
+    <div class="vp__grid">
+      <div class="vp-card">
+        <div class="vp-card__icon">
+          <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        </div>
+        <div class="vp-card__num">83%</div>
+        <div class="vp-card__text">das pessoas preferem receber brindes personalizados como presente de empresa</div>
+      </div>
+      <div class="vp-card">
+        <div class="vp-card__icon">
+          <svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <div class="vp-card__num">85%</div>
+        <div class="vp-card__text">dos clientes lembram da marca depois de receber um brinde de qualidade</div>
+      </div>
+      <div class="vp-card">
+        <div class="vp-card__icon">
+          <svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <div class="vp-card__num">7x</div>
+        <div class="vp-card__text">mais barato que campanhas digitais com muito maior retenção de marca</div>
+      </div>
+      <div class="vp-card">
+        <div class="vp-card__icon">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div class="vp-card__num">63%</div>
+        <div class="vp-card__text">das pessoas passam ou reutilizam brindes, multiplicando o alcance da sua marca</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== SOCIAL PROOF ======================== -->
+<section class="section section--dark">
+  <div class="container">
+    <div style="text-align:center">
+      <span class="tag tag--light">Números que comprovam</span>
+      <h2 class="title" style="color:white">Uma empresa que já entregou<br />resultado para milhares de marcas</h2>
+    </div>
+    <div class="sp__numbers">
+      <div class="sp__number">
+        <div class="sp__num">+3M</div>
+        <div class="sp__label">brindes produzidos</div>
+      </div>
+      <div class="sp__number">
+        <div class="sp__num">+10K</div>
+        <div class="sp__label">empresas atendidas</div>
+      </div>
+      <div class="sp__number">
+        <div class="sp__num">9.2</div>
+        <div class="sp__label">nota média de satisfação</div>
+      </div>
+      <div class="sp__number">
+        <div class="sp__num">+10</div>
+        <div class="sp__label">categorias de brindes</div>
+      </div>
+    </div>
+    <div class="clients__logos">
+      <div class="client-logo">SICOOB</div>
+      <div class="client-logo">JOHN DEERE</div>
+      <div class="client-logo">IRONMAN</div>
+      <div class="client-logo">UNIMED</div>
+      <div class="client-logo">FRUTAP</div>
+      <div class="client-logo">SICREDI</div>
+      <div class="client-logo">VOLKSWAGEN</div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== TESTIMONIALS ======================== -->
+<section class="section section--gray">
+  <div class="container">
+    <div style="text-align:center">
+      <span class="tag">Depoimentos</span>
+      <h2 class="title">O que nossos clientes dizem</h2>
+      <p class="subtitle">Mais de 10.000 empresas já confiam na Tantos Brindes.</p>
+    </div>
+    <div class="testimonials__grid">
+      <div class="testimonial-card">
+        <div class="testimonial-card__stars">★★★★★</div>
+        <div class="testimonial-card__text">"Encomendar as camisetas para o evento da empresa foi super fácil. Em menos de 15 dias tivemos tudo na mão, com qualidade excelente. Nossa equipe amou."</div>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar">C</div>
+          <div>
+            <div class="testimonial-card__name">Carla Medeiros</div>
+            <div class="testimonial-card__company">Diretora de RH — TechCorp Brasil</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-card__stars">★★★★★</div>
+        <div class="testimonial-card__text">"Fazemos kits de boas-vindas para nossos funcionários há 2 anos com a Tantos. Atendimento impecável, preço justo e entrega sempre no prazo. Não trocaria."</div>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar">R</div>
+          <div>
+            <div class="testimonial-card__name">Rafael Torres</div>
+            <div class="testimonial-card__company">CEO — Construtora Nova Era</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-card__stars">★★★★★</div>
+        <div class="testimonial-card__text">"Encomendamos 500 canecas para campanha de Natal dos clientes. Ficaram perfeitas. Recebemos elogios de todos os presentes. Já estamos planejando o próximo pedido!"</div>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar">A</div>
+          <div>
+            <div class="testimonial-card__name">Amanda Lopes</div>
+            <div class="testimonial-card__company">Marketing — Grupo Varejo Sul</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== ABOUT ======================== -->
+<section class="section" id="quem-somos">
+  <div class="container">
+    <div class="about__inner">
+      <div class="about__visual">🎁</div>
+      <div>
+        <span class="tag">Quem somos</span>
+        <h2 class="title">Desde 2020 estruturando<br />marcas com brindes de verdade</h2>
+        <p class="subtitle">A Tantos Brindes nasceu com uma proposta clara: eliminar o improviso na produção de brindes corporativos e entregar previsibilidade para empresas que precisam de resultado, não de promessas.</p>
+        <div class="about__list">
+          <div class="about__list-item">
+            <div class="about__check">
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <span>Produção própria com controle total de qualidade em cada etapa</span>
+          </div>
+          <div class="about__list-item">
+            <div class="about__check">
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <span>Arte inclusa no orçamento — sem custos ocultos e sem surpresas</span>
+          </div>
+          <div class="about__list-item">
+            <div class="about__check">
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <span>Gestor de conta dedicado do pedido à entrega</span>
+          </div>
+          <div class="about__list-item">
+            <div class="about__check">
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <span>Reposição garantida em caso de defeito de produção</span>
+          </div>
+          <div class="about__list-item">
+            <div class="about__check">
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <span>CNPJ ativo e nota fiscal em todos os pedidos</span>
+          </div>
+        </div>
+        <div style="margin-top:32px">
+          <a href="#orcamento" class="btn btn--dark">Falar com nossa equipe →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== FAQ ======================== -->
+<section class="section section--gray" id="duvidas">
+  <div class="container">
+    <div style="text-align:center">
+      <span class="tag">Dúvidas Frequentes</span>
+      <h2 class="title">Perguntas que nossos clientes<br />sempre fazem</h2>
+    </div>
+    <div class="faq__list">
+      <div class="faq__item">
+        <div class="faq__question" onclick="toggleFaq(this)">
+          Qual é o pedido mínimo?
+          <div class="faq__icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </div>
+        <div class="faq__answer">O mínimo varia por produto. A maioria dos itens começa a partir de 30 unidades. Alguns produtos específicos, como sacolas e canetas, têm mínimo de 50 unidades. Entre em contato para confirmar o mínimo do produto que você deseja.</div>
+      </div>
+      <div class="faq__item">
+        <div class="faq__question" onclick="toggleFaq(this)">
+          Qual é o prazo de produção e entrega?
+          <div class="faq__icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </div>
+        <div class="faq__answer">O prazo padrão é de 7 dias úteis após aprovação da arte e confirmação do pagamento. Pedidos urgentes podem ser negociados com taxa adicional. Você recebe código de rastreio assim que o pedido sai da produção.</div>
+      </div>
+      <div class="faq__item">
+        <div class="faq__question" onclick="toggleFaq(this)">
+          Preciso ter o arquivo da minha logo? Como funciona a arte?
+          <div class="faq__icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </div>
+        <div class="faq__answer">Aceitamos PNG, JPG, PDF e arquivos vetoriais (AI, EPS, SVG). Se você não tiver um arquivo de qualidade, nossa equipe de design pode ajudar na vetorização. A arte final é enviada para sua aprovação antes de iniciar a produção.</div>
+      </div>
+      <div class="faq__item">
+        <div class="faq__question" onclick="toggleFaq(this)">
+          Quais são as formas de pagamento?
+          <div class="faq__icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </div>
+        <div class="faq__answer">Aceitamos Pix (com desconto), boleto bancário e cartão de crédito em até 12x. Para pedidos corporativos acima de R$5.000 é possível negociar condições especiais de faturamento.</div>
+      </div>
+      <div class="faq__item">
+        <div class="faq__question" onclick="toggleFaq(this)">
+          Vocês emitem nota fiscal?
+          <div class="faq__icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </div>
+        <div class="faq__answer">Sim. Todos os pedidos têm nota fiscal eletrônica. Também fornecemos contrato de prestação de serviços para pedidos acima de determinado valor, garantindo segurança jurídica para ambas as partes.</div>
+      </div>
+      <div class="faq__item">
+        <div class="faq__question" onclick="toggleFaq(this)">
+          O que acontece se um produto chegar com defeito?
+          <div class="faq__icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </div>
+        <div class="faq__answer">Garantimos a reposição de qualquer produto com defeito de fabricação. Basta registrar no nosso SAC com fotos do problema em até 7 dias após o recebimento. Analisamos e, sendo aprovado, enviamos a reposição sem custo adicional.</div>
+      </div>
+      <div class="faq__item">
+        <div class="faq__question" onclick="toggleFaq(this)">
+          Entregam fora do estado? Qual o custo de frete?
+          <div class="faq__icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </div>
+        <div class="faq__answer">Sim, entregamos para todo o Brasil via transportadora. O frete é calculado com base no peso, volume e destino do pedido. Para compras acima de determinado valor, oferecemos frete grátis em regiões selecionadas. Pergunte ao seu consultor.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== SAC ======================== -->
+<section class="section section--green" id="sac">
+  <div class="container">
+    <div style="text-align:center; margin-bottom:48px">
+      <span class="tag tag--light">SAC</span>
+      <h2 class="title" style="color:white">Atendimento ao cliente</h2>
+      <p class="subtitle subtitle--light">Nossa equipe está pronta para ajudar de segunda a sexta, das 8h às 18h.</p>
+    </div>
+    <div class="grid-2">
+      <div style="background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.15); border-radius:12px; padding:28px; text-align:center">
+        <div style="font-size:32px; margin-bottom:16px">💬</div>
+        <div style="font-weight:700; font-size:16px; color:white; margin-bottom:8px">WhatsApp</div>
+        <div style="font-size:13px; color:rgba(255,255,255,.7); margin-bottom:16px">Resposta em até 5 MINUTOS</div>
+        <a href="https://wa.me/5514997059908?text=Ol%C3%A1%2C+vim+pelo+site+e+gostaria+de+receber+um+orçamento+de+brindes+personalizados." class="btn btn--outline" style="font-size:13px; padding:10px 20px">Abrir WhatsApp</a>
+      </div>
+      <div style="background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.15); border-radius:12px; padding:28px; text-align:center">
+        <div style="font-size:32px; margin-bottom:16px">📧</div>
+        <div style="font-weight:700; font-size:16px; color:white; margin-bottom:8px">E-mail</div>
+        <div style="font-size:13px; color:rgba(255,255,255,.7); margin-bottom:16px">sac@tantosbrindes.com.br</div>
+        <a href="mailto:sac@tantosbrindes.com.br" class="btn btn--outline" style="font-size:13px; padding:10px 20px">Enviar e-mail</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== FOOTER ======================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand-logo">
+          <img src="logo branca.png" alt="Tantos Brindes" style="height:48px; width:auto;" />
+        </div>
+        <p class="footer__brand-desc">Brindes personalizados com estrutura, qualidade e previsibilidade. Da arte à entrega, do pedido ao resultado. Para empresas que levam a marca a sério.</p>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/fashioncaps.ind/" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" aria-label="TikTok">
+            <svg viewBox="0 0 24 24"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Empresa</div>
+        <div class="footer__links">
+          <a href="#quem-somos">Quem Somos</a>
+          <a href="#blog">Blog</a>
+          <a href="#duvidas">FAQ</a>
+          <a href="#sac">SAC</a>
+          <a href="#">Política de Privacidade</a>
+          <a href="#">Termos de Uso</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Contato</div>
+        <div class="footer__contact-item">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          contato@tantosbrindes.com.br
+        </div>
+        <div class="footer__contact-item">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          +55 (14) 99705-9908
+        </div>
+        <div class="footer__contact-item">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Seg–Sex: 8h às 18h
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container" style="display:flex; align-items:center; justify-content:space-between; width:100%; flex-wrap:wrap; gap:8px">
+      <span>© 2026 Tantos Brindes</span>
+      <span>Desenvolvido com estrutura pela <a href="#">Assessoria Tantos</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ======================== WHATSAPP FLOAT ======================== -->
+<div class="wa-float">
+  <a href="https://wa.me/5514997059908?text=Ol%C3%A1%2C+vim+pelo+site+e+quero+um+or%C3%A7amento+de+brindes!" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+  <div class="wa-float__label">Falar no WhatsApp</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
