@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tantos Brindes — Redirecionando para o WhatsApp</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <!-- Redirect imediato (fallback caso o JS falhe) -->
+  <meta http-equiv="refresh" content="0; url=https://wa.me/5514997059908?text=Ol%C3%A1!%20Acabei%20de%20preencher%20o%20formul%C3%A1rio%20e%20quero%20meu%20or%C3%A7amento%20de%20brindes%20personalizados." />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0F2A44;
+      color: #FFFFFF;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 24px;
+    }
+    .spinner {
+      width: 48px;
+      height: 48px;
+      border: 4px solid rgba(255,255,255,0.2);
+      border-top-color: #25D366;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      margin-bottom: 28px;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    h1 { font-size: 20px; font-weight: 600; margin-bottom: 10px; }
+    p { font-size: 14px; opacity: 0.7; max-width: 320px; line-height: 1.5; }
+    a.btn {
+      margin-top: 26px;
+      display: inline-block;
+      background: #25D366;
+      color: #073B2A;
+      font-weight: 700;
+      text-decoration: none;
+      padding: 14px 28px;
+      border-radius: 999px;
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="spinner" aria-hidden="true"></div>
+  <h1>Abrindo o WhatsApp da Tantos Brindes…</h1>
+  <p>Se nada acontecer em 3 segundos, toque no botão abaixo.</p>
+  <a class="btn" id="waLink"
+     href="https://wa.me/5514997059908?text=Ol%C3%A1!%20Acabei%20de%20preencher%20o%20formul%C3%A1rio%20e%20quero%20meu%20or%C3%A7amento%20de%20brindes%20personalizados.">
+     Falar no WhatsApp agora
+  </a>
+
+  <script>
+    // Redirect primário — o mais rápido e confiável
+    (function () {
+      var url = "https://wa.me/5514997059908?text=Ol%C3%A1!%20Acabei%20de%20preencher%20o%20formul%C3%A1rio%20e%20quero%20meu%20or%C3%A7amento%20de%20brindes%20personalizados.";
+      window.location.replace(url);
+    })();
+  </script>
+</body>
+</html>
